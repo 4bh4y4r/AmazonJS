@@ -1,4 +1,4 @@
-import {cart, removeItem} from '../data/cart.js';
+import {cart, removeItem, saveToStorage} from '../data/cart.js';
 import {products} from '../data/products.js';
 import { formatCurrency } from '../scripts/utils/money.js';
 
@@ -115,6 +115,7 @@ document.querySelectorAll(".js-item-delete").forEach((item) => {
 
         const container = document.querySelector(`.js-cart-item-container-${productId}`);
         container.remove();
+        
 
     })
 })
